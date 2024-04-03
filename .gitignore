@@ -1,2 +1,5 @@
 # .gitignore
 march4/
+*.gz
+data/
+
