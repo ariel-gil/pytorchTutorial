@@ -49,9 +49,9 @@ class NeuralNet(nn.Module):
         self.input_size = input_size
         self.l1 = nn.Linear(input_size, hidden_size) 
         self.relu = nn.ReLU()
-        self.l2 = nn.Linear(hidden_size, num_classes)  
+        self.l2 = nn.Linear(hidden_size, num_classes)   ## (input, output)
     
-    def forward(self, x):
+    def forward(self, x): ## implicitly calling 
         out = self.l1(x)
         out = self.relu(out)
         out = self.l2(out)

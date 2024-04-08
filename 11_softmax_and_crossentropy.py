@@ -48,6 +48,8 @@ l2 = cross_entropy(Y, Y_pred_bad)
 print(f'Loss1 numpy: {l1:.4f}')
 print(f'Loss2 numpy: {l2:.4f}')
 
+
+
 # CrossEntropyLoss in PyTorch (applies Softmax)
 # nn.LogSoftmax + nn.NLLLoss
 # NLLLoss = negative log likelihood loss
